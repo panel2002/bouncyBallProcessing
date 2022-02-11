@@ -50,7 +50,7 @@ void XPhysics(){
 //Apply falling physics(Y axis physics): Gravity and bouncing off ceiling
 void FallingPhysics(){
   hitCeiling();
-  if (prevY >= 390 && (accelerationY == 0)){
+  if (prevY >= 390 && (accelerationY <= 0.05)){
     return;
   }
   hitGround();
